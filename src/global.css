@@ -1,0 +1,84 @@
+/* Reset 및 기본 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden; /* 전체 페이지 스크롤 방지 */
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 링크 스타일 */
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+/* Container 기본 스타일 */
+.container {
+    position: relative;
+    background-color: white;
+    width: 375px; /* 일반적인 휴대폰 가로 크기 */
+    height: 812px; /* 일반적인 휴대폰 세로 크기 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Container 외부로의 오버플로우 숨김 */
+    border-radius: 10px; /* 모서리 둥글게 */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container 내부에서 스크롤을 가능하게 설정 */
+.container > * {
+    flex: 1;
+    overflow: auto;
+}
+
+/* 컴퓨터 화면용 반응형 스타일 */
+@media (min-width: 769px) {
+    .container {
+        /* 고정된 크기를 유지하면서 화면 중앙에 배치 */
+        width: 375px;
+        height: 812px; /* 잘못된 height 속성 수정 (812 -> 812px) */
+    }
+
+    /* 외부 여백은 회색으로 유지하고 스크롤 방지 */
+    html, body {
+        overflow: hidden;
+    }
+}
+
+/* 모바일 화면용 반응형 스타일 */
+@media (max-width: 768px) {
+    .container {
+        width: 100vw;
+        height: 100vh;
+        max-height: none; /* 높이 제한 제거 */
+        box-shadow: none; /* 그림자 제거 */
+        border-radius: 0; /* 모서리 둥글기 제거 */
+        padding: 0; /* 패딩 제거하여 전체 화면 활용 */
+        overflow: hidden; /* 전체 컨테이너 오버플로우 숨김 */
+    }
+
+    /* Container 내부에서만 스크롤 가능하게 설정 */
+    .container > * {
+        overflow: auto;
+    }
+
+    html, body {
+        overflow: hidden; /* 전체 페이지 스크롤 방지 */
+    }
+}
