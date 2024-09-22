@@ -1,23 +1,25 @@
 ## 서비스 요약
-**Gracker** - 졸업 지원 서비스
+🎓🎓 **Gracker** - 대학생, 성공적인 졸업 지원 서비스 🎓🎓
 
 ## 주제 구분
-- **E타입**: 경북대학교에 재학 중인 다양한 배경의 학우들을 위한 맞춤형 서비스
+- **E타입**: 경북대에 다니는 다양한 배경의 학우들을 위한 서비스👋
 
 ## 팀원 소개
 
 <table>
   <tbody>
     <tr>
-      <td align="center"><a href="https://github.com/lsmin3388"><img src="" width="100px;" alt=""/><br /><sub><b>FE/BE/팀장 : 이상민 (컴퓨터학부 심컴 23학번)</b></sub></a><br /></td>
-      <td align="center"><a href="https://github.com/wodydl0"><img src="" width="100px;" alt=""/><br /><sub><b>Design/팀원 : 정구현 (컴퓨터학부 글솦 23학번) </b></sub></a><br /></td>
-      <td align="center"><a href="https://github.com/j9hyeon"><img src="" width="100px;" alt=""/><br /><sub><b>BE/팀원 : 박재영 (컴퓨터학부 글솦 22학번) </b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/lsmin3388"><img src="https://github.com/user-attachments/assets/ce739ae9-f8d4-40c0-bece-d75d819925af" width="100px;" alt=""/><br /><sub><b> 이상민 👋<br> FE/BE/팀장 <br> (컴퓨터학부 심컴 23학번)</b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/j9hyeon"><img src="" width="100px;" alt=""/><br /><sub><b> 정구현 👍 <br> Design/팀원 <br> (컴퓨터학부 글솦 23학번) </b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/wodydl0"><img src="" width="100px;" alt=""/><br /><sub><b> 박재영 🤟 <br> BE/팀원 <br> (컴퓨터학부 글솦 22학번) </b></sub></a><br /></td>
     </tr>
   </tbody>
 </table>
 
 ## 시연 영상
-[Gracker 서비스 시연 영상](https://www.youtube.com/watch?v=z0vadBZvQXc)
+[![Gracker 서비스 시연 영상](https://i.ytimg.com/vi/z0vadBZvQXc/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC_KGjfa2BcpFRCa5p7Yqz4uLmq4g)](https://www.youtube.com/watch?v=z0vadBZvQXc)
+
+
 
 ## 서비스 소개
 
@@ -52,7 +54,7 @@ Gracker는 다음과 같은 기능을 구현하여 서비스의 완성도를 높
 
 | 단계 | 기간                     | 계획 내용                                                      |
 |------|--------------------------|----------------------------------------------------------------|
-| 1차  | 2024년 9월 23일 ~ 10월 7일      | 컴퓨터학부 학생들을 대상으로 서비스 시범 운영 및 초기 피드백 수집 |
+| 1차  | 2024년 9월 23일 ~ 10월 7일      | 경북대학교 컴퓨터학부 학생들을 대상으로 서비스 시범 운영 및 초기 피드백 수집 |
 | 2차  | 2024년 10월 8일 ~ 11월 30일     | 경북대학교 전체 학과로 서비스 확장 및 추가 기능 도입             |
 | 3차  | 2025년 1월 ~             | 타 대학으로 서비스 범위를 확대하여 전국적인 졸업 요건 관리 플랫폼으로 발전 |
 
