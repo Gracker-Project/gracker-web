@@ -6,12 +6,13 @@
 
 ## 팀원 소개
 
+
 <table>
   <tbody>
     <tr>
       <td align="center"><a href="https://github.com/lsmin3388"><img src="https://github.com/user-attachments/assets/ce739ae9-f8d4-40c0-bece-d75d819925af" width="100px;" alt=""/><br /><sub><b> 이상민 👋<br> FE/BE/팀장 <br> (컴퓨터학부 심컴 23학번)</b></sub></a><br /></td>
-      <td align="center"><a href="https://github.com/j9hyeon"><img src="" width="100px;" alt=""/><br /><sub><b> 정구현 👍 <br> Design/팀원 <br> (컴퓨터학부 글솦 23학번) </b></sub></a><br /></td>
-      <td align="center"><a href="https://github.com/wodydl0"><img src="" width="100px;" alt=""/><br /><sub><b> 박재영 🤟 <br> BE/팀원 <br> (컴퓨터학부 글솦 22학번) </b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/j9hyeon"><img src="https://github.com/user-attachments/assets/7e130631-0cc6-4030-af76-a369b0a18625" width="100px;" alt=""/><br /><sub><b> 정구현 👍 <br> Design/팀원 <br> (컴퓨터학부 글솦 23학번) </b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/wodydl0"><img src="https://github.com/user-attachments/assets/de59afdc-f176-4002-afbf-a52b92cfb6d2" width="100px;" alt=""/><br /><sub><b> 박재영 🤟 <br> BE/팀원 <br> (컴퓨터학부 글솦 22학번) </b></sub></a><br /></td>
     </tr>
   </tbody>
 </table>
