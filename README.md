@@ -1,5 +1,6 @@
 ## 🔗 프로젝트 Github 주소 🔗
 Backend: https://github.com/Gracker-Project/gracker-server
+
 Frontend: https://github.com/Gracker-Project/gracker-web
 
 ## 서비스 요약
