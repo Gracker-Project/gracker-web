@@ -9,7 +9,7 @@ export const TabbarContainer = styled.nav`
     justify-content: space-around;
     align-items: center;
     z-index: 1000;
-    flex-shrink: 0; /* Add this line to prevent shrinking */
+    flex-shrink: 0;
 `;
 
 export const TabItem = styled.div<{ active: boolean }>`
@@ -18,17 +18,30 @@ export const TabItem = styled.div<{ active: boolean }>`
     align-items: center;
     color: ${(props) => (props.active ? "#9a2828" : "#5c5c5c")};
     cursor: pointer;
+    transition: color 0.3s ease;
 
     &:hover {
         color: #9a2828;
     }
 
-    svg {
-        font-size: 24px;
-    }
-
     span {
         font-size: 12px;
         margin-top: 4px;
+        font-weight: ${(props) => (props.active ? "bold" : "normal")};
+    }
+`;
+
+export const TabIconWrapper = styled.div<{ active: boolean }>`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        color: ${(props) => (props.active ? "#9a2828" : "#5c5c5c")};
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: #9a2828;
+        }
     }
 `;

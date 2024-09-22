@@ -1,8 +1,7 @@
 import styled from "@emotion/styled";
-import { mobile } from "@/example/styles/breakpoint";
 
 export const ButtonStyled = styled.button<{ type?: "button" | "submit" | "reset" }>`
-  min-width: 200px;
+  width: 90%;
   margin-top: 20px;
   padding: 10px 30px;
   border-radius: 20px;
@@ -14,10 +13,6 @@ export const ButtonStyled = styled.button<{ type?: "button" | "submit" | "reset"
   background-color: #9a2828;
   cursor: pointer;
   transition: 0.3s ease-in-out;
-
-  ${mobile} {
-    font-size: 16px;
-  }
 
   &:hover {
     transform: translateY(-5px);

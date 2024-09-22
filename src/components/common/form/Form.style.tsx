@@ -3,6 +3,7 @@ import { mobile } from "@/example/styles/breakpoint";
 import styled from "@emotion/styled";
 
 export const FormWrapper = styled.div`
+    width: 90%;
     padding: 35px 0px;
 
     display: flex;
@@ -11,17 +12,14 @@ export const FormWrapper = styled.div`
 
     max-width: 600px;
     border-radius: 20px;
-
-    ${mobile} {
-        padding: 30px;
-        min-width: 300px;
-    }
 `;
 
 export const FormItem = styled.div`
+    width: 100%;
     display: flex;
-    gap: 20px;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
 
     font-size: 14px;
     font-weight: 400;
@@ -37,15 +35,15 @@ export const ItemTitle = styled.div`
 `;
 
 export const ItemContent = styled.div`
+    width: 100%;
     display: flex;
     gap: 10px;
     align-items: center;
-
     font-size: 18px;
 `;
 
 export const ItemInput = styled.input`
-    width: 240px;
+    width: 100%;
     height: 40px;
 
     padding: 5px 20px;
@@ -56,21 +54,18 @@ export const ItemInput = styled.input`
     &:focus {
         outline: 2px solid #9a2828;
     }
-
-    ${mobile} {
-        width: 180px;
-    }
 `;
 
 export const ItemTextArea = styled.textarea`
-    width: 400px;
-    height: 80px;
+    width: 240px;
+    height: 40px;
 
     resize: none;
 
     padding: 10px 20px;
     font-size: 15px;
     border-radius: 20px;
+    border: 1px solid #E8E8E8;
 
     &:focus {
         outline: 2px solid #9a2828;
@@ -93,10 +88,11 @@ export const ItemRadioContainer = styled.div`
 `;
 
 export const ItemSelect = styled.select`
-    width: 240px;
+    width: 100%;
     height: 40px;
     padding: 5px 20px;
     font-size: 15px;
+    color: ${(props) => (props.value === "" ? "#5c5c5c" : "#000")};
     border-radius: 10px;
     border: 1px solid #E8E8E8;
     background-color: #fff;
