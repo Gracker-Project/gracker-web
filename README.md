@@ -1,50 +1,69 @@
-# React + TypeScript + Vite
+## 서비스 요약
+**Gracker** - 졸업 지원 서비스
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 주제 구분
+- **E타입**: 경북대학교에 재학 중인 다양한 배경의 학우들을 위한 맞춤형 서비스
 
-Currently, two official plugins are available:
+## 팀원 소개
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<table>
+  <tbody>
+    <tr>
+      <td align="center"><a href="https://github.com/lsmin3388"><img src="" width="100px;" alt=""/><br /><sub><b>FE/BE/팀장 : 이상민 (컴퓨터학부 심컴 23학번)</b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/wodydl0"><img src="" width="100px;" alt=""/><br /><sub><b>Design/팀원 : 정구현 (컴퓨터학부 글솦 23학번) </b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/j9hyeon"><img src="" width="100px;" alt=""/><br /><sub><b>BE/팀원 : 박재영 (컴퓨터학부 글솦 22학번) </b></sub></a><br /></td>
+    </tr>
+  </tbody>
+</table>
 
-## Expanding the ESLint configuration
+## 시연 영상
+[Gracker 서비스 시연 영상](https://www.youtube.com/watch?v=z0vadBZvQXc)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 서비스 소개
 
-- Configure the top-level `parserOptions` property like this:
+### 서비스 개요
+Gracker는 경북대학교 학생들이 졸업 요건을 체계적으로 관리하고, 졸업 준비 과정을 효율적으로 진행할 수 있도록 지원하는 통합 플랫폼입니다. 사용자 친화적인 인터페이스와 고도화된 기능을 통해 학생들은 자신의 학업 현황을 실시간으로 파악하고, 향후 학업 계획을 수립할 수 있습니다. 또한, 졸업한 선배들의 검증된 팁과 추천 과목 정보를 제공하여 성공적인 졸업을 위한 최적의 전략을 제시합니다.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 타서비스와의 차별점
+경북대학교 통합정보시스템과 비교하여 Gracker는 다음과 같은 차별점을 가지고 있습니다:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. **가시성 향상**: 많은 학생들이 현재 시스템의 존재조차 인지하지 못하는 반면, Gracker는 직관적인 디자인과 접근성을 통해 사용자들이 쉽게 이용할 수 있습니다.
+2. **향상된 사용자 경험(UX)**: 단순한 정보 제공을 넘어, 사용자 경험을 극대화한 인터페이스로 졸업 요건 관리가 용이합니다.
+3. **종합적인 졸업 요건 관리(추가 시스템)**: 단순히 졸업 요건 충족 여부를 알려주는 것을 넘어, 남은 요건을 충족하기 위한 전략 수립, 다음 학기에 추천할 과목 제안, 졸업한 선배들의 검증된 졸업 전략 정보 등을 제공합니다.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### 구현 내용 및 결과물
+Gracker는 다음과 같은 기능을 구현하여 서비스의 완성도를 높였습니다:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- **졸업 요건 자동 계산**: 학생의 학업 이력을 기반으로 졸업 요건을 자동으로 계산하고, 남은 요건을 시각적으로 표시합니다.
+- **맞춤형 학업 계획 수립**: 남은 졸업 요건을 충족하기 위한 구체적인 학업 계획을 제안하며, 다음 학기에 수강하면 유용한 과목을 추천합니다.
+- **선배 팁 제공**: 졸업한 선배들의 검증된 팁을 통해 학업 및 졸업 준비 과정에서의 실질적인 조언을 제공합니다.
+- **실시간 업데이트**: 학사 정보 시스템과 연동하여 실시간으로 학업 현황을 업데이트하고, 변화에 신속하게 대응할 수 있습니다.
+
+### 구현 방식
+
+| 구분        | 기술 스택                              | 설명                                                                 |
+|-------------|----------------------------------------|----------------------------------------------------------------------|
+| **Frontend**| React, Vite, Redux, Styled-Components  | 반응형 UI 구현과 상태 관리를 통해 사용자 친화적인 인터페이스 제공     |
+| **Backend** | Spring, Spring JPA, Spring Security, MySQL | 안정적이고 확장 가능한 서버 구축을 통해 데이터 관리 및 보안 강화      |
+| **DevOps**  | AWS EC2, Ubuntu, Nginx, Docker         | 클라우드 인프라를 활용한 서비스 배포 및 관리 자동화                   |
+| **ETC**     | OpenAI                                 | 인공지능을 활용한 추천 시스템 및 데이터 분석 기능 구현                |
+
+### 향후 개선 및 발전 방안
+
+| 단계 | 기간                     | 계획 내용                                                      |
+|------|--------------------------|----------------------------------------------------------------|
+| 1차  | 2024년 9월 23일 ~ 10월 7일      | 컴퓨터학부 학생들을 대상으로 서비스 시범 운영 및 초기 피드백 수집 |
+| 2차  | 2024년 10월 8일 ~ 11월 30일     | 경북대학교 전체 학과로 서비스 확장 및 추가 기능 도입             |
+| 3차  | 2025년 1월 ~             | 타 대학으로 서비스 범위를 확대하여 전국적인 졸업 요건 관리 플랫폼으로 발전 |
+
+## 결론
+Gracker는 경북대학교 학생들의 성공적인 졸업을 지원하기 위해 탄생한 혁신적인 서비스입니다. 체계적인 졸업 요건 관리와 맞춤형 학업 계획 제공을 통해 학생들이 효율적으로 졸업을 준비할 수 있도록 돕습니다. 앞으로도 지속적인 개선과 확장을 통해 더 많은 학생들에게 유용한 서비스를 제공할 것입니다.
+
+---
+
+**문의 및 피드백**
+서비스에 대한 문의나 피드백은 팀원 이메일을 통해 접수받고 있습니다. 여러분의 소중한 의견을 반영하여 Gracker를 더욱 발전시켜 나가겠습니다.
+
+- lsmin3388@knu.ac.kr
+
+감사합니다.
